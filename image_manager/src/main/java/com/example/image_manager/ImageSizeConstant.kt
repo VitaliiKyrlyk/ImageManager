@@ -1,0 +1,16 @@
+package com.example.image_manager
+
+enum class ImageSizeConstant {
+    IMAGE_DEFAULT_SIZE,
+    IMAGE_SQUARE_256,
+    IMAGE_SQUARE_512,
+    IMAGE_SQUARE_640,
+    IMAGE_SQUARE_720,
+    IMAGE_SQUARE_1024,
+    IMAGE_SQUARE_2048,
+    IMAGE_640_360,
+    IMAGE_854_480,
+    IMAGE_1280_720,
+    IMAGE_1920_1080,
+    IMAGE_2560_1440,
+}
