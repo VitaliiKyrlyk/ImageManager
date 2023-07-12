@@ -15,6 +15,7 @@ import android.util.Log
 import androidx.core.app.ActivityCompat
 import androidx.core.content.FileProvider
 import androidx.exifinterface.media.ExifInterface
+import androidx.fragment.app.FragmentActivity
 import com.example.image_manager.AspectRatioConstant.*
 import com.example.image_manager.ImageSizeConstant.*
 import com.soundcloud.android.crop.Crop
@@ -48,6 +49,13 @@ class ImageManager {
     }
     
     constructor(activity: Activity, authority: String, directoryName: String) {
+        mActivity = activity
+        mCtx = activity
+        this.authority = authority
+        this.directoryName = directoryName
+    }
+    
+    constructor(activity: FragmentActivity, authority: String, directoryName: String) {
         mActivity = activity
         mCtx = activity
         this.authority = authority
